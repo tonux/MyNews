@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkbox_arts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arts"
+            android:theme="@style/checkBoxStyle"
+            android:textColor="@android:color/black"
+            android:layout_margin="5dp"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_business"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/business"
+            android:theme="@style/checkBoxStyle"
+            android:textColor="@android:color/black"
+            android:layout_margin="5dp"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_entrepreneurs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/entrepreneurs"
+            android:theme="@style/checkBoxStyle"
+            android:textColor="@android:color/black"
+            android:layout_margin="5dp"
+            android:onClick="onCheckboxClicked"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <CheckBox
+            android:id="@+id/checkbox_politics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/politics"
+            android:theme="@style/checkBoxStyle"
+            android:textColor="@android:color/black"
+            android:layout_margin="5dp"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sports"
+            android:theme="@style/checkBoxStyle"
+            android:textColor="@android:color/black"
+            android:layout_margin="5dp"
+            android:onClick="onCheckboxClicked"/>
+
+
+        <CheckBox
+            android:id="@+id/checkbox_travel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/travel"
+            android:theme="@style/checkBoxStyle"
+            android:textColor="@android:color/black"
+            android:layout_margin="5dp"
+            android:onClick="onCheckboxClicked"/>
+    </LinearLayout>
+
+
+</LinearLayout>

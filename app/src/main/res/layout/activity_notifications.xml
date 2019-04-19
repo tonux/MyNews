@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.NotificationsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_notification_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar"
+        app:subtitleTextColor="@android:color/black"
+        app:theme="@style/ToolBarStyle"
+        app:titleTextColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/search_query_term_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/toolbar"
+        android:hint="Search query term"
+        android:textCursorDrawable="@color/toolbar" />
+
+        <include
+            layout="@layout/check_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable notifications (once per day)"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"/>
+
+
+            <ToggleButton
+                android:id="@+id/toggle_button_notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/toolbar"
+                android:textOn="Enable"
+                android:textOff="Disable"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
