@@ -25,6 +25,11 @@ before_script:
   - android-wait-for-emulator
   - ./gradlew connectedCheck
   - ./gradlew test
+  ./gradlew sonarqube \
+   -Dsonar.projectKey=tonux_MyNews \
+   -Dsonar.organization=tonux-github \
+   -Dsonar.host.url=https://sonarcloud.io \
+   -Dsonar.login=de2e3a073fbf79c31bb9cd1a24a270bb5626ced7
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
